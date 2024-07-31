@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:id="@+id/homeFragment"/>
+    <item android:title="Feeds"
+        android:icon="@drawable/ic_feeds"
+        app:showAsAction="always"
+        android:id="@+id/feedsFragment"/>
+    <item android:title="Chats"
+        android:icon="@drawable/ic_chat"
+        app:showAsAction="always"
+        android:id="@+id/chatsFragment"/>
+
+
+</menu>

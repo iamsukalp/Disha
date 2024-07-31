@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/faq_title"
+        android:textColor="@color/white"
+        tools:text="Léon: The Professional" />
+    <LinearLayout
+        android:id="@+id/sub_item"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/question"
+            tools:text="Genre:  Crime, Drama, Thriller"
+            android:textColor="@color/primary_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/primary_text"
+            android:id="@+id/answer"
+            tools:text="Year: 1993" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:id="@+id/item_divider" />
+</LinearLayout>

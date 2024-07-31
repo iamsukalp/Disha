@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/received_message_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/message_recieved_bg"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/received_text"
+            android:text="Message received"
+            android:textColor="@color/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/received_time"
+            android:text="Time"
+            android:textColor="@color/primary_text"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/received_text"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/received_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/received_image"
+        app:layout_constraintStart_toEndOf="@id/received_message_container"
+        app:layout_constraintEnd_toEndOf="@id/received_message_container"
+        app:layout_constraintTop_toBottomOf="@id/received_message_container"
+        app:layout_constraintBottom_toBottomOf="@id/received_message_container"
+        android:src="@drawable/ic_profile_placeholder"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sent_message_container"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/message_sent_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sent_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Message Sent"
+            android:textColor="@color/primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/sent_time"
+            android:text="Time"
+            android:textColor="@color/primary_text"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@id/sent_text"
+            app:layout_constraintTop_toBottomOf="@id/sent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sent_image"
+        app:layout_constraintStart_toStartOf="@id/sent_message_container"
+        app:layout_constraintEnd_toStartOf="@id/sent_message_container"
+        app:layout_constraintTop_toBottomOf="@id/sent_message_container"
+        app:layout_constraintBottom_toBottomOf="@id/sent_message_container"
+        android:src="@drawable/ic_profile_placeholder"
+        android:layout_width="25dp"
+        android:layout_height="25dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

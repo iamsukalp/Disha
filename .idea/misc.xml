@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/drawable/bottommenu_bg.xml" value="0.203" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/drawable/message_recieved_bg.xml" value="0.2095" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/drawable/message_sent_bg.xml" value="0.2095" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/drawable/round_button_bg.xml" value="0.255" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/layout/activity_chat_window.xml" value="0.24947916666666667" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/layout/faq_list_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/layout/fragment_chats.xml" value="0.24947916666666667" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/layout/message_list_item.xml" value="0.24947916666666667" />
+        <entry key="..\:/work/AndroidProject 2021/Disha/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.24947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

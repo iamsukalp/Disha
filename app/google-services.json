@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "948612959093",
+    "firebase_url": "https://disha-6af88-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "disha-6af88",
+    "storage_bucket": "disha-6af88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948612959093:android:1e31ab1e88b8509f98e13c",
+        "android_client_info": {
+          "package_name": "com.appsters.disha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948612959093-79m5vklg0eopkmacsv34b6jii37n9qp3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsters.disha",
+            "certificate_hash": "2789fd4c80b06e31b52e5236fa1273069e155e67"
+          }
+        },
+        {
+          "client_id": "948612959093-lmf7soecf5shq9g2gr16t1c6q8ctk93s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsters.disha",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "948612959093-acjrqql73m9i7769omiaft97lf0jb6vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDybzGMUF9sXubkWmKbRSZALGyTj4tAqkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948612959093-acjrqql73m9i7769omiaft97lf0jb6vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948612959093:android:fcddf2c5e7d88fb098e13c",
+        "android_client_info": {
+          "package_name": "com.appsters.dishaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948612959093-scl7947pal353jccgug0q13g1k0sluk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsters.dishaadmin",
+            "certificate_hash": "81cae3928638796e79c438a88d0b8a300ef85807"
+          }
+        },
+        {
+          "client_id": "948612959093-acjrqql73m9i7769omiaft97lf0jb6vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDybzGMUF9sXubkWmKbRSZALGyTj4tAqkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948612959093-acjrqql73m9i7769omiaft97lf0jb6vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

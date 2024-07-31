@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.OTPFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/otp"
+        android:layout_width="250dp"
+        app:layout_constraintVertical_bias="0.25"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/otp_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:text="Please enter OTP"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/otp_pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otp_label"
+        android:layout_marginTop="15dp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:hint="Hint"
+        android:inputType="numberPassword"
+        android:itemBackground="@drawable/basic_et_bg"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorWidth="2dp"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="36dp"
+        app:itemRadius="4dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="36dp"
+        app:lineWidth="2dp"
+        app:viewType="rectangle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/otp_loginBtn"
+        android:background="@drawable/basic_button_bg"
+        android:elevation="16dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Login"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/otp_pin"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

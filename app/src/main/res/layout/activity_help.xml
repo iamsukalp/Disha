@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HelpActivity">
+    <TextView
+        android:id="@+id/helpTitle"
+        android:text="Frequently Asked Questions"
+        android:textColor="@color/primary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="24dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/faqRecycler"
+        app:layout_constraintTop_toBottomOf="@id/helpTitle"
+        android:layout_margin="24dp"
+        app:layout_constraintBottom_toTopOf="@id/HelpChatBotButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <Button
+        android:id="@+id/HelpChatBotButton"
+        android:backgroundTint="@color/white"
+        android:text="Still stuck? Talk to RAMA"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

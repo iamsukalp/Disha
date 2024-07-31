@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/onboarding_nav_graph.xml"
+    app:startDestination="@id/flashFragment">
+
+    <fragment
+        android:id="@+id/flashFragment"
+        android:name="com.appsters.disha.Fragments.FlashFragment"
+        android:label="fragment_flash"
+        tools:layout="@layout/fragment_flash" >
+        <action
+            android:id="@+id/action_flashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.appsters.disha.Fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_NMATFragment"
+            app:destination="@id/NMATFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneFragment"
+        android:name="com.appsters.disha.Fragments.PhoneFragment"
+        android:label="fragment_phone"
+        tools:layout="@layout/fragment_phone" >
+        <action
+            android:id="@+id/action_phoneFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment" />
+        <argument
+            android:name="nmat"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.appsters.disha.Fragments.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" >
+        <argument
+            android:name="verificationId"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="phone"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="nmatId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/NMATFragment"
+        android:name="com.appsters.disha.Fragments.NMATFragment"
+        android:label="fragment_n_m_a_t"
+        tools:layout="@layout/fragment_n_m_a_t" >
+        <action
+            android:id="@+id/action_NMATFragment_to_phoneFragment"
+            app:destination="@id/phoneFragment" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="token"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+</navigation>
